@@ -21,7 +21,8 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <platform name="android">
-        <preference name="android-minSdkVersion" value="16" />
+        <preference name="android-minSdkVersion" value="20" />
+        <preference name="android-targetSdkVersion" value="28" />
         <allow-intent href="market:*" />
     </platform>
     
