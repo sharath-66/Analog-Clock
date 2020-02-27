@@ -1,13 +1,13 @@
 //------- Admob ----------
 var admobid = {
   //--- Test Ads ---
-  banner: 'ca-app-pub-3940256099942544/6300978111',
-  interstitial: 'ca-app-pub-3940256099942544/1033173712',
-  rewardvideo: 'ca-app-pub-3940256099942544/5224354917'
+  //banner: 'ca-app-pub-3940256099942544/6300978111',
+  //interstitial: 'ca-app-pub-3940256099942544/1033173712',
+  //rewardvideo: 'ca-app-pub-3940256099942544/5224354917'
   //--- Live Ads ---
-  //banner: 'ca-app-pub-5039568744793885/8017826678',
-  //interstitial: 'ca-app-pub-5039568744793885/2765499997',
-  //rewardvideo: 'ca-app-pub-5039568744793885/3435567922'
+  banner: 'ca-app-pub-5039568744793885/8017826678',
+  interstitial: 'ca-app-pub-5039568744793885/2765499997',
+  rewardvideo: 'ca-app-pub-5039568744793885/3435567922'
 };
 
 function initAds() {
