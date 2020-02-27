@@ -1,24 +1,24 @@
 //------- Admob ----------
 var admobid = {
   //--- Test Ads ---
-  //banner: 'ca-app-pub-3940256099942544/6300978111',
-  //interstitial: 'ca-app-pub-3940256099942544/1033173712',
-  //rewardvideo: 'ca-app-pub-3940256099942544/5224354917'
+  banner: 'ca-app-pub-3940256099942544/6300978111',
+  interstitial: 'ca-app-pub-3940256099942544/1033173712',
+  rewardvideo: 'ca-app-pub-3940256099942544/5224354917'
   //--- Live Ads ---
-  banner: 'ca-app-pub-5039568744793885/8017826678',
-  interstitial: 'ca-app-pub-5039568744793885/2765499997',
-  rewardvideo: 'ca-app-pub-5039568744793885/3435567922'
+  //banner: 'ca-app-pub-5039568744793885/8017826678',
+  //interstitial: 'ca-app-pub-5039568744793885/2765499997',
+  //rewardvideo: 'ca-app-pub-5039568744793885/3435567922'
 };
 
 function initAds() {
   if (!AdMob) {
     alert('admob plugin not ready');
-    document.getElementById('status').innerHTML = 'Admob plugin not ready';
+    //document.getElementById('status').innerHTML = 'Admob plugin not ready';
     return;
   }
 
   initAd();
-  document.getElementById('status').innerHTML = 'Ads initialized';
+  //document.getElementById('status').innerHTML = 'Ads initialized';
 }
 
 function initAd() {
@@ -33,8 +33,8 @@ function initAd() {
     bgColor: 'black', // color name, or '#RRGGBB'
     // x: integer,		// valid when set position to 0 / POS_XY
     // y: integer,		// valid when set position to 0 / POS_XY
-    isTesting: false, // set to true, to receiving test ad for testing purpose
-    autoShow: true // auto show interstitial ad when loaded, set to false if prepare/show
+    isTesting: true, // set to true, to receiving test ad for testing purpose
+    autoShow: false // auto show interstitial ad when loaded, set to false if prepare/show
   };
   AdMob.setOptions(defaultOptions);
 
@@ -112,16 +112,16 @@ function prepareAd(type) {
 
 //--- called from onClick() inline in html pages ---
 function showBannerAd() {
-  document.getElementById('status').innerHTML = 'Banner Ad called';
+  //document.getElementById('status').innerHTML = 'Banner Ad called';
   AdMob.showBanner(AdMob.AD_POSITION.BOTTOM_CENTER);
 }
 
 function showInterstitialAd() {
-  document.getElementById('status').innerHTML = 'Interstitial Ad called';
+  //document.getElementById('status').innerHTML = 'Interstitial Ad called';
   AdMob.showInterstitial();
 }
 
 function showRewardedVideoAd() {
-  document.getElementById('status').innerHTML = 'Rewarded Video Ad called';
+  //document.getElementById('status').innerHTML = 'Rewarded Video Ad called';
   AdMob.showRewardVideoAd();
 }
